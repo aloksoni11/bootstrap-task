@@ -1,0 +1,53 @@
+<!DOCTYPE html >
+<html lang="en" class="h-100">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> Title </title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <style>
+        .h2Div {
+            border-radius: 5px;
+            box-shadow: -1px 4px 18px 2px #a79c9c;
+
+        }
+        .h2Div:hover{
+            box-shadow: -1px 4px 18px 2px #81b7cf;
+        }
+        
+        .ans{
+            box-shadow: -1px 4px 18px 2px #a79c9c;
+        }
+        .ans:hover{
+            box-shadow: -1px 4px 18px 2px #b2c63d;
+        }    
+
+    </style>
+</head>
+
+<body class="h-100">
+    <div class="container h-100">
+        <div class="row align-items-center h-100 text-center ">
+            <div class="col-lg-2 bg-primary p-4 h2Div" id="num1">
+                <h2 contenteditable="true">value</h2>
+            </div>
+            <div class="col-lg-2 ">
+                <h1>+</h1>
+            </div>
+            <div class="col-lg-2 bg-success p-4 h2Div">
+                <h2 contenteditable="true" id="num2">value</h2>
+            </div>
+            <div class="col-lg-2" onclick="sum()">
+                <h1>=</h1>
+            </div>
+            <div class="col-lg-2 bg-danger p-4 rounded-pill ans">
+                <h2 id="ansbar">Answer</h2>
+            </div>
+        </div>
+    </div>
+    <script src="js/task6.js"></script>
+</body>
+
+</html>
